@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:help_teacher/layers/domain/presentation/cdb_lci_compare/cdb_lci_compare.dart';
+import 'package:help_teacher/layers/domain/presentation/comparer_investiment/compare_investiment_page.dart';
 import 'package:help_teacher/layers/domain/presentation/dashboard/dashboard.dart';
 import 'package:help_teacher/layers/domain/presentation/home/home_page.dart';
 import 'package:help_teacher/layers/domain/presentation/introdution/introdution.dart';
@@ -37,6 +38,11 @@ final router = GoRouter(
       name: 'investmentSimulator',
       path: '/investmentSimulator',
       builder: (context, state) => InvestimentSimulatorPage(),
+    ),
+    GoRoute(
+      name: 'compareInvestiment',
+      path: '/compareInvestiment',
+      builder: (context, state) => const CompareInvestimentPage(),
     )
   ],
 );
