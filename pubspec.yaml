@@ -23,6 +23,7 @@ dependencies:
   flutter_mobx: ^2.0.6+5
   chips_choice: ^3.0.0
   dropdown_search: ^5.0.5
+  fl_chart: ^0.60.0
   
 
 dev_dependencies:

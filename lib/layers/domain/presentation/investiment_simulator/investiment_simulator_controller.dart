@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:help_teacher/utils/global_contenxt.dart';
 import 'package:mobx/mobx.dart';
-import 'dart:math';
 part 'investiment_simulator_controller.g.dart';
 
 class InvestimentSimulatorController = _InvestimentSimulatorControllerBase
@@ -92,7 +92,7 @@ abstract class _InvestimentSimulatorControllerBase with Store {
                 child: ElevatedButton(
                   
                   onPressed: () {
-              
+                    context.pushNamed('compareInvestiment');
                   }, child: 
                 const Text('Comparar com outros investimentos')),
               ),
