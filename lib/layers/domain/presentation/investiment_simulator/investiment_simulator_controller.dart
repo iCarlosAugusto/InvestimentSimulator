@@ -94,7 +94,7 @@ abstract class _InvestimentSimulatorControllerBase with Store {
                   onPressed: () {
                     context.pushNamed('compareInvestiment');
                   }, child: 
-                Text('Comparar com outros investimentos')),
+                const Text('Comparar com outros investimentos')),
               ),
             ],
           );
